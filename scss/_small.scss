@@ -1,0 +1,197 @@
+/* font size change from portrait to landscape prevention */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+/* natural box model */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    color: $fontColor;
+}
+
+#headerWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorOne
+}
+header {
+    display: flex;
+    align-items: flex-end;
+    gap: $gutter;
+    padding: .5rem $gutter .75rem;
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        font-weight: $lightWeight;
+    }
+}
+
+#navWrapper {
+    background-color: $colorOne;
+    position: sticky;
+    top: 0;
+}
+nav {
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+    }
+    li{flex:1;}
+    li.active{background-color: darken($colorOne,10%);}
+    a{
+        display: block;
+        text-align: center;
+        padding: .75rem;
+        text-decoration: none;
+        color: $fontColor;
+        img{width: 24px; height: 24px;}
+        span{display: none;}
+        &:hover{
+            background-color: lighten($colorOne,10%);
+        }
+    }
+}
+
+main {
+    h1{
+        margin: 0;
+        padding: .5rem 0;
+        font-weight: $lightWeight;
+    }
+    p{
+        line-height: 135%;
+        margin: 0;
+        text-align: center;
+    }
+    section{
+        padding: $gutter;
+        min-height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            margin: $gutter 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2,h3,h4{font-weight: $normalWeight;}
+        h2{
+            margin: 1rem;
+            font-size: 2rem;
+        }
+        h3{
+            margin: 0;
+            padding: $gutter;
+            font-size: 1.2rem;
+        }
+        h4{
+            margin: 1rem 0 .5rem;
+            font-size: 1rem;
+        }
+    }
+
+    #sectionOne{
+        background-color: $colorTwo;
+        img{clip-path: circle(50% at 50% 50%);}
+        h1{padding: 2rem;}
+    }
+
+    #sectionTwo{
+        background-color: $colorThree;
+        div{
+            display: grid;
+            grid-template-areas: "title" "img" "description" "button";
+
+            gap: $gutter;
+            border: 2px solid #333;
+            border-radius: 16px;
+
+            margin: $gutter;
+            overflow: hidden;
+
+            h3{
+                text-align: center; 
+                grid-area: title;
+                width: 100%;
+
+                background-color: $fontColor;
+                color: #eee;
+            }
+            img, p{
+                width: 100%;
+                padding: 0 $gutter;}
+            img{
+                margin: $gutter auto;
+                height: auto;
+                grid-area: img;
+            }
+            p{
+                grid-area: description;
+            }
+            button{
+                grid-area: button;
+                width: 72%;
+
+                padding: .5rem 0;
+                margin: 0 auto $gutter; 
+                border-radius: 8px;
+
+                border: none;
+                background-color: $fontColor;
+                color: #eee;
+            }
+        }
+    }
+
+    #sectionThree{
+        background-color: $colorFour;
+    }
+
+    #sectionFour{
+        background-color: $colorFive;
+        flex-direction: row;
+        a{color: $fontColor;}
+        img{width: 32px;}
+    }
+
+    #sectionFive{
+        background-color: $colorSix;
+        flex-direction: row;
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: $gutter;
+            li{list-style-type: none;}
+        }
+        img{width: 32px; height: 32px;}
+    }
+}
+
+#footerWrapper {
+    background-color: $colorOne;
+}
+footer {
+    padding: 0.5rem $gutter;
+    p{
+        margin: 0;
+        font-weight: $normalWeight;
+        text-align: center;
+    }
+}

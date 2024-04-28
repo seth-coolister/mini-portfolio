@@ -1,0 +1,42 @@
+body{
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+#navWrapper{
+    grid-row: 1 / span 3;
+    position: relative;
+}
+nav ul {
+    flex-direction: column;
+    height: 100vh;
+    width: 250px;
+    justify-content: center;
+    position: fixed;
+    li {
+        flex:none;
+        border-bottom: rgba(0,0,0,.1) solid 1px;
+    }
+    a{padding: 2rem 0 1rem;}
+    
+}
+
+main{
+    #sectionTwo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+        div{
+            grid-template-areas: 
+            "title" 
+            "img"
+            "description" 
+            "button";
+            width: calc(50% - 2rem);
+            p{flex-grow: 1;}
+        }
+    }
+}

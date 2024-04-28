@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Start File | The Responsive Starters</title>
+    <meta name="description" content="Seth's Sample Start File with SCSS">
+    <meta name="author" content="Seth Callister">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <!-- fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <picture>
+          <source media="(min-width: 64rem)" srcset="images/logo3x.png">
+                <source media="(min-width: 35rem)" srcset="images/logo2x.png">
+                <img src="/images/logo1x.png" alt="logo" width="51px">
+        </picture> 
+        <h1>Seth Callister, UX Designer</h1>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav>
+        <ul>
+          <li class="active"><a href="#sectionOne"><img src="images/house-solid.svg"><span>Seth Callister</span></a></li>
+          <li><a href="#sectionTwo"><img src="images/pen-solid.svg"><span>My Projects</span></a></li>
+          <li><a href="#sectionThree"><img src="images/user-solid.svg"><span>My Background</span></a></li>
+          <li><a href="#sectionFour"><img src="images/file-solid.svg"><span>My Resume</span></a></li>
+          <li><a href="#sectionFive"><img src="images/envelope-solid.svg"><span>Connect With Me</span></a></li>
+        </ul>
+      </nav>
+    </div>  
+
+    <div id="mainWrapper">
+      <main>
+
+        <section id="sectionOne">
+          <img src="images/seth.webp" alt="Seth" height="225" width="225">
+          <h1>Hi, I'm Seth Callister</h1>
+          <p>I'm a Psychology graduate turned UX Designer with a knack for connecting to how people think and feel. I love to create intuitive, mindful, and engaging designs.</p>
+        </section>
+
+
+        <section id="sectionTwo">
+          <h2>My Projects</h2>
+
+          <div>
+            <h3>Eli Joe's Workshop</h3>
+            <img src="images/eli.webp" alt="Eli Joe's Workshop" width="500" height="290">
+            <p>
+              Eli Joe's Workshop specializes in custom fantasy crafts and table-top role-playing game aides. I designed a website that showcases their products and services.
+            </p>
+            <button>Check It Out!</button>
+          </div>
+
+          <div>
+            <h3>Men Healing</h3>
+            <img src="images/mh.webp" alt="MenHealing" width="500" height="290">
+            <p>
+              MenHealing is a nonprofit org that provides resources to men who have been sexually victimized. I redesigned their website to be more user-friendly and accessible.
+            </p>
+            <button>Check It Out!</button>
+          </div>
+
+          <div>
+            <h3>TMT Studios</h3>
+            <img src="images/roguepg.webp" alt="TMTStudios" width="500" height="290">
+            <p>
+              TMT Studios is a small indie game development studio. I designed a website that showcases their games and provides a platform for community engagement.
+            </p>
+            <button>Check It Out!</button>
+          </div>
+
+        </section>
+
+
+        <section id="sectionThree">
+
+            <div>
+              <h2>My Background</h2>
+              <p>
+                I'm a creative individual who finds joy in the challenge of blending functionality with aesthetics. With a background in psychology, I'm fascinated by understanding how people think, feel, and behave, and I love incorporating this knowledge into user-centered designs. Each project is an exciting opportunity for me to learn and innovate, creating designs that resonate with users on a deeper level.
+              </p>
+            </div>
+
+            <div>
+              <h3>My Career So Far</h3>
+              <p>
+                I graduated from Utah Valley University in 2021 with a bachelors in Psychology, received a Certificate of UX/UI design from the University of Utah in 2022, and I'm now expected to receive a bachelors in Web Design and Development in August 2025. I've done a handful of service learning projects while in college and some freelance work as well.
+              </p>
+            </div>
+
+            <div>
+              <h3>Skills</h3>
+              <h4>UX Skills</h4>
+              <p>UX Research | Usability Testing | Wireframing | Prototyping | Information Architecture</p>
+              <h4>Technologies</h4>
+              <p>
+                Figma | Adobe Creative Suite | HTML | CSS | JavaScript | Node.js | Git | WordPress | WebFlow
+              </p>
+              <h4>Soft Skills</h4>
+              <p>
+                Communication | Collaboration | Problem-Solving | Time Management | Adaptability | Empathy
+              </p>
+            </div>
+
+        </section>
+
+
+        <section id="sectionFour">
+          <img src="images/download-solid.svg"><h2><a href="resume.pdf" download>My Resume</a></h2>
+        </section>
+
+        <section id="sectionFive">
+          <h2>Connect With Me</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/seth-callister/" target="_blank"><img src="images/linkedin.svg"></a></li>
+            <li><a href="https://www.instagram.com/sethcal7/"><img src="images/square-instagram.svg" target="_blank"></a></li>
+            <li><a href="mailto:seth.callister3@gmail.com"><img src="images/envelope-solid.svg" target="_blank"></a></li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+
+    <div id="footerWrapper">
+      <footer>
+        <p>&copy; Seth Callister <span id="year"></span></p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
