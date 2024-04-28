@@ -156,6 +156,11 @@ main {
                 background-color: $fontColor;
                 color: #eee;
             }
+            button:hover{
+                background-color: darken($fontColor,5%);
+                cursor: pointer;
+                box-shadow: 0 0 8px 0 #000;
+            }
         }
     }
 
@@ -181,6 +186,7 @@ main {
             li{list-style-type: none;}
         }
         img{width: 32px; height: 32px;}
+        img:hover{transform: scale(1.1);}
     }
 }
 
